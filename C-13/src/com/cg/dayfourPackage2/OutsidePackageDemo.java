@@ -1,4 +1,4 @@
-package com.cd.dayfourPackage2;
+package com.cg.dayfourPackage2;
 
 import com.cg.dayfour1.InsidePackage;
 
