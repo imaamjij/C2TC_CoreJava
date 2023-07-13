@@ -32,6 +32,21 @@ public class Encapsule {
 		this.gender = gender;
 	}
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	// to string method
 	@Override
 	public String toString() {
