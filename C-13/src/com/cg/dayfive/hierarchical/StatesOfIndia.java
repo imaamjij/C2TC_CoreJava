@@ -10,6 +10,18 @@ public class StatesOfIndia {
 	public void setCountryname(String countryname) {
 		Countryname = countryname;
 	}
+	
+
+	public StatesOfIndia() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+
+	public StatesOfIndia(String countryname) {
+		super();
+		Countryname = countryname;
+	}
 
 	@Override
 	public String toString() {
