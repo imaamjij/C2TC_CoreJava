@@ -9,6 +9,7 @@ public class RBI {
 class SBI extends RBI{
 	public float getRateOfInterest() {
 		return 8.7f;
+		
 	}
 }
 
