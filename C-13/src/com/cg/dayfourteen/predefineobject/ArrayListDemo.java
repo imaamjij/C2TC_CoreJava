@@ -2,7 +2,9 @@ package com.cg.dayfourteen.predefineobject;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Iterator;
 import java.util.List;
+import java.util.ListIterator;
 
 public class ArrayListDemo {
 	public static void main(String[] args) {
@@ -39,5 +41,26 @@ public class ArrayListDemo {
 		Collections.reverse(list3);
 		System.out.println("Reversed ArrayList :"+list3);
 		
+		Collections.sort(list3);
+		System.out.println("Ascending Order :"+list3);
+		
+		Collections.reverse(list3);
+		System.out.println("Descending Order :"+list3);
+		
+		//Traverse the list (Iterator)
+		Iterator<String> i = list3.iterator();
+		while(i.hasNext()) {
+			String local=i.next();
+			System.out.println(local);
+		}
+		
+		System.out.println("=================================");
+		
+		
+		ListIterator<String> i2= list3.listIterator(list3.size());
+		while(i2.hasPrevious()) {
+			String local =i2.previous();
+			System.out.println(local);
+		}
 	}
 }
