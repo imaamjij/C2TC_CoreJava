@@ -2,6 +2,7 @@ package com.cg.streamapi;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Stream;
 
 public class StreamReduce {
@@ -14,6 +15,15 @@ public class StreamReduce {
 		//Filter +ve elements
 		stream = stream.filter((a) -> a>0);
 		stream.forEach(System.out::println);
+		
+		//maximum no..
+		Optional<Integer> result = stream.reduce((a,b) -> a>b ? a:b);
+		
+		if(result.isPresent()) {
+			System.out.println("Maximum element is :"+result.get());
+		}else {
+			System.out.println("Stream is Empty");
+		}
 	}
 
 }
